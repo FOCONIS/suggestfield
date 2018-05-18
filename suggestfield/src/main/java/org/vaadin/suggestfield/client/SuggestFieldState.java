@@ -1,5 +1,7 @@
 package org.vaadin.suggestfield.client;
 
+import java.io.Serializable;
+
 import com.vaadin.shared.AbstractFieldState;
 
 @SuppressWarnings("serial")

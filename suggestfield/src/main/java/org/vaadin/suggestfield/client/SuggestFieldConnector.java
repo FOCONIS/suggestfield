@@ -1,5 +1,6 @@
 package org.vaadin.suggestfield.client;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.vaadin.suggestfield.SuggestField;
@@ -22,7 +23,7 @@ import com.vaadin.shared.ui.Connect;
 
 @Connect(SuggestField.class)
 @SuppressWarnings("serial")
-public class SuggestFieldConnector extends AbstractFieldConnector implements
+public class SuggestFieldConnector<T extends Serializable> extends AbstractFieldConnector implements
 		VSuggestField.FindSuggestionsListener, SelectionHandler<Suggestion>,
 		SuggestFieldClientRpc, FocusHandler, BlurHandler {
 

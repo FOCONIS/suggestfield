@@ -10,17 +10,18 @@ import org.vaadin.suggestfield.client.SuggestFieldSuggestion;
  *
  */
 @SuppressWarnings("serial")
-public class StringSuggestionConverter implements SuggestionConverter {
+public class StringSuggestionConverter implements SuggestionConverter<String> {
 
+	public static final StringSuggestionConverter DEFAULT_INSTANCE = new StringSuggestionConverter();
+	
 	@Override
-	public SuggestFieldSuggestion toSuggestion(Object item) {
-		assert (item != null) : "Item cannot be null";
-		String value = (String) item;
+	public SuggestFieldSuggestion toSuggestion(String value) {
+		assert (value != null) : "Value cannot be null";
 		return new SuggestFieldSuggestion(value, value, value);
 	}
 
 	@Override
-	public Object toItem(SuggestFieldSuggestion suggestion) {
+	public String toItem(SuggestFieldSuggestion suggestion) {
 		assert (suggestion != null) : "Suggestion cannot be null";
 		return suggestion.getId();
 	}
