@@ -114,6 +114,9 @@ FIX: onSuggestionSelected must set the value as userOriginated
 ### Version 0.0.5-FOC18
 - Updated to Vaadin release 8.3.3
 
+### Version 0.0.5-FOC19
+- Reworked code with generics
+
 ## Roadmap
 
 This component is developed as a hobby with no public roadmap or any guarantees of upcoming releases.
