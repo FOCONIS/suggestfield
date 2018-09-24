@@ -2,7 +2,7 @@
 
 SuggestField is an UI component Add-on for Vaadin 8.
 
-**Important:** This is a fork that currently supports this Add-on for the released Vaadin 8.4.3.
+**Important:** This is a fork that currently supports this Add-on for the released Vaadin 8.5.2.
 
 ## Download release
 
@@ -119,6 +119,9 @@ FIX: onSuggestionSelected must set the value as userOriginated
 
 ### Version 0.0.5-FOC20
 - Updated to Vaadin release 8.4.3
+
+### Version 0.0.5-FOC21
+- Updated to Vaadin release 8.5.2
 
 ## Roadmap
 
